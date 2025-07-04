@@ -1,0 +1,108 @@
+.confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.confetti-piece {
+    position: absolute;
+    width: 12px;
+    height: 24px;
+    background: linear-gradient(135deg, #ffeb3b, #00e5ff, #ff4081, #69f0ae, #ffd740);
+    border-radius: 4px;
+    opacity: 0.8;
+    animation: confetti-fall 1.5s linear forwards;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(-100px) rotateZ(0deg);
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100vh) rotateZ(360deg);
+        opacity: 0;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+
+body {
+    background-image: url('https://img.freepik.com/free-photo/abstract-uv-ultraviolet-light-composition_23-2149243965.jpg?semt=ais_hybrid&w=740');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+
+}
+
+header h1 {
+    text-shadow: 0px 0px 30px cyan,
+        5px 5px 10px red;
+}
+
+.game {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    text-shadow: 0 0 1px cyan;
+}
+
+.game input {
+    width: 200px;
+    display: flex;
+    text-align: center;
+    margin: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+
+}
+
+button:active {
+
+    transform: scale(0.9);
+}
+
+.totalattempt {
+
+    font-size: 20px;
+}
+
+.help {
+    font-size: 20px;
+}

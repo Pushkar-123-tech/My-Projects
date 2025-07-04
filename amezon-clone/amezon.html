@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-4g5v1+2x3z> 
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8b+z4+2e5c1a7e5b5a5c5a5c5a5c5a5c5a5" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/PATH/flag-icons.min.css">
+    
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 2px solid white;
+
+}
+
+
+.address {
+    color: white;
+    
+    
+}
+
+.add-first {
+    color: white;
+    font-size: 12px;
+    margin-left: 15px;
+
+}
+
+.add-sec{
+    color: white;
+    font-size: 14px;
+    margin-left: 3px;
+    
+}
+.add-icon {
+    display: flex;
+    color: white;
+    
+    align-items: center;
+}
+
+
+.nav-search{
+    margin: 20px;
+display: flex;
+background-color: aqua;
+width: 920px;
+height: 40px;
+border-radius: 5px;
+
+}
+
+.search-select{
+background-color: #f3f3f3;
+color: gray;
+width: 50px;
+text-align: center;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+}
+.search-select:hover{
+    color: black;
+}
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+.search-icon{
+    width: 45px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#FFD580 ;
+    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px ;
+}
+.search-icon:hover{
+    background-color:#FFB347;
+    cursor: pointer;
+}
+.flag{
+    display: flex;
+    align-items: center;
+}
+.flag-icon{
+    margin: 5px;
+}
+.signin{
+    margin: 20px;
+
+}
+.signin-text1{
+    font-size: 12px;
+}
+.signin-text2{
+    font-size: 14px;
+}
+
+.orders-text1{
+    font-size: 12px;
+}
+.orders-text2{
+    font-size: 14px;
+}
+.cart{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+.cart-text{
+    font-size: 16px;
+    margin-left: 5px;
+}
+.panel{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: #192632;
+    color: white;
+
+}
+.bars{
+    margin: 5px;
+}
+.panel-1{
+    align-items: center;
+    display: flex;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.panel-2{
+    display: flex;
+    align-items: center;
+   column-gap: 20px;
+   margin-left: 10px;
+   font-size: 14.5px;
+}
+.herosection{
+  
+    background-image: url('https://m.media-amazon.com/images/I/71Ie3JXGfVL._SX3000_.jpg');
+   
+    background-size: cover;
+    height: 310px;
+    display: flex;
+    
+    justify-content: center;
+ background-color: white;
+
+ 
+}
+.herotext{
+   
+    background-color: white;
+    height: 40px;
+    position: relative;
+    width: 97%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 256px;
+    
+}
+.herotext a {
+    text-decoration: none;
+    color: #007185;
+    
+}
+.container1
+{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.box-1{
+    height: 385px;
+    width: 350px;
+    border: 2px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.box-1 a{
+    text-decoration: none;
+    color: #007185;
+    display: flex;
+    margin: 10px;
+    margin-left: 23px;
+    
+    }
+.img-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.box-2{
+    height: 385px;
+    width: 350px;
+    border: 2px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.box-2 a{
+    text-decoration: none;
+    color: #007185;
+    display: flex;
+    margin: 10px;
+    margin-left: 23px;
+    }
+.img-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.box-3{
+    height: 385px;
+    width: 350px;
+    border: 2px solid black;
+    
+   
+
+  
+}
+.box-3 h2{
+    margin: 15px;
+}
+.box-3 a{
+    text-decoration: none;
+    color: #007185;
+    display: flex;
+    margin: 10px;
+    margin-left: 23px;
+    }
+.img-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.box-4{
+    height: 385px;
+    width: 350px;
+    border: 2px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.box-4 a{
+    text-decoration: none;
+    color: #007185;
+    display: flex;
+    margin: 10px;
+    margin-left: 23px;
+    }
+.img-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.container2{
+   margin-top: 20px;
+   height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.backtop {
+   
+     height: 40px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #3d4a57;
+                
+   
+}
+.backtop p{
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+    </style>
+
+</head>
+
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo ">
+                <img class="border" src="https://hipfonts.com/wp-content/uploads/2022/11/amazon-logo-cover.png"
+                    height="50" width="113" alt="">
+            </div>
+            <div class="address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-sec">India</p>
+                </div>
+
+
+            </div>
+            <div class="nav-search">
+                <select class="search-select">
+                    <option value="">All</option>
+
+                </select>
+                <input placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </div>
+            </div>
+
+            <div class="flag border">
+                <img class="flag-icon"
+                    src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="US Flag"
+                    width="21" height="16">
+                <p>EN</p>
+            </div>
+            <div class="signin border">
+                <p class="signin-text1">
+                    Hello,sign in
+                </p>
+                <p class="signin-text2"><b>
+                        Account & Lists
+                    </b>
+                </p>
+
+            </div>
+            <div class="orders border">
+                <p class="orders-text1">Returns</p>
+                <p class="orders-text2"><b>& Orders</b></p>
+
+        </div>
+        <div class="cart border">
+            <i class="fa-solid fa-cart-shopping" ></i>
+            <p class="cart-text" ><b>cart</b></p>
+        </div>
+
+    </header>
+    <div class="panel">
+        <div class="panel-1">
+            <i  class="fa-solid fa-bars"></i>
+            <p class="bars"><b>All</b></p>
+        </div>
+        <div class="panel-2">
+            <p>Today's Deals</p>
+            <p>Registry</p>
+            <p>Costomer Sevice</p>
+            <p>Gift Cards</p>
+            <p>Sell</p>
+        </div>
+    </div>
+    
+             <div class="herosection">
+                    <div class="herotext">
+        
+                    <p>
+                        You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. 
+                        <a  href="https://www.amazon.in/">Click here to go to amazon.in</a>
+                    </p>
+                     </div>
+          
+             </div>
+             
+        <div class="container1">
+            <div class="box-1">
+                <h2 style="margin: 20px;">Gaming accessories</h2>
+                <div class="img1" style="margin-left: 23px;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNXk_JDCB-aek8EEJR1c7C0t-kdoL8mbTPQg&s" width="300" height="280" alt="">
+                </div>
+                <p><a href="" >see more</a></p>
+            </div>
+            <div class="box-2">
+                <h2 style="margin: 20px;font-size: 21px;">Shop for your home essential</h2>
+                <div class="img2" style="margin-left: 23px;">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeDecor_1x._SY116_CB563137408_.jpg" width="300" height="280" alt="">
+                </div>
+                <p><a href="" >discover more in home</a></p>
+            </div>
+            <div class="box-3">
+                <h2 style="margin: 20px;">Get your game on</h2>
+                <div class="img3" style="margin-left: 23px;">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Stores-Gaming/FinalGraphics/Fuji_Gaming_store_Dashboard_card_1x_EN._SY304_CB564799420_.jpg" width="300"height="280" alt="">
+                </div>
+                <p><a href="" >shop gaming</a></p>
+            </div>
+            <div class="box-4">
+                <h2 style="margin: 20px; "  >Shop deals in fassion</h2>
+                <div class="img4" style="margin-left: 23px;">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg" width="300" height="280" alt="">
+                </div>
+                <p><a href="" style="margin-left: 0px;">see all deals</a></p>
+            </div>
+        </div>
+
+
+
+
+        <div class="container2">
+            <div class="box-1">
+                <h2 style="margin: 20px;">Gaming accessories</h2>
+                <div class="img1" style="margin-left: 23px;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNXk_JDCB-aek8EEJR1c7C0t-kdoL8mbTPQg&s" width="300" height="280" alt="">
+                </div>
+                <p><a href="" >see more</a></p>
+            </div>
+            <div class="box-2">
+                <h2 style="margin: 20px;font-size: 21px;">Shop for your home essential</h2>
+                <div class="img2" style="margin-left: 23px;">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeDecor_1x._SY116_CB563137408_.jpg" width="300" height="280" alt="">
+                </div>
+                <p><a href="" >discover more in home</a></p>
+            </div>
+            <div class="box-3">
+                <h2 style="margin: 20px;">Get your game on</h2>
+                <div class="img3" style="margin-left: 23px;">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Stores-Gaming/FinalGraphics/Fuji_Gaming_store_Dashboard_card_1x_EN._SY304_CB564799420_.jpg" width="300"height="280" alt="">
+                </div>
+                <p><a href="" >shop gaming</a></p>
+            </div>
+            <div class="box-4">
+                <h2 style="margin: 20px; "  >Shop deals in fassion</h2>
+                <div class="img4" style="margin-left: 23px;">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg" width="300" height="280" alt="">
+                </div>
+                <p><a href="" style="margin-left: 0px;">see all deals</a></p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="backtop">
+                <p >back to top</p>
+            </div>
+
+            <div style="background-color:#232F3E; color:white; padding: 20px;">
+                <div style="display:flex; justify-content:space-around; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 200px; margin-left: 40px;row-gap: 10px;">
+                        <h3>Get to Know Us</h3>
+                        <ul>
+                            <li>Careers</li>
+                            <li>Blog</li>
+                            <li>About Amazon</li>
+                            <li>Investor Relations</li>
+                            <li>Amazon Devices</li>
+                            <li>Amazon Science</li>
+                        </ul>
+                    </div>
+                    <div style="flex: 1; min-width: 200px;">
+                        <h3>Make Money with Us</h3>
+                        <ul>
+                            <li>Sell products on Amazon</li>
+                            <li>Sell on Amazon Business</li>
+                            <li>Sell apps on Amazon</li>
+                            <li>Become an Affiliate</li>
+                            <li>Advertise Your Products</li>
+                            <li>Self-Publish with Us</li>
+                            <li>Host an Amazon Hub</li>
+                            <li>> See More Make Money with Us</li>
+                        </ul>
+                    </div>
+                    <div style="flex: 1; min-width: 200px;">
+                        <h3>Amazon Payment Products</h3>
+                        <ul>
+                            <li>Amazon Business Card</li>
+                            <li>Shop with Points</li>
+                            <li>Reload Your Balance</li>
+                            <li>Amazon Currency Converter</li>
+                        </ul>
+                    </div>
+                    <div style="flex: 1; min-width: 200px;">
+                        <h3>Let Us Help You</h3>
+                        <ul>
+                            <li>Amazon and COVID-19</li>
+                            <li>Your Account</li>
+                            <li>Your Orders</li>
+                            <li>Shipping Rates & Policies</li>
+                            <li>Returns & Replacements</li>
+                            <li>Manage Your Content and Devices</li>
+                            <li>Help</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        
+
+
+
+
+<footer>
+    
+</footer>
+    
+</body>
+
+</html>

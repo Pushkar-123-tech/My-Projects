@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+   
+     background: linear-gradient(to right, red, blue);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.header h1{
+    font-size: 3rem;
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    font-family: 'Arial', sans-serif;
+    flex-wrap: nowrap;
+    overflow: hidden; text-overflow: ellipsis;
+   text-shadow: 6px 4px 5px rgba(0, 0, 0, 0.5);
+}
+.background img{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    position: absolute;
+    filter: blur(5px);
+    z-index: -1;
+}
+.game{
+    display: flex;
+    justify-content: center;
+}
+.game button{
+  
+    height: 30vh;
+    width: 30vh;
+   
+    padding: 5px;
+    margin: 30px;
+    border: none;
+    border-radius: 50%;
+    align-items: center;
+
+}
+.game button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+.game button img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    display: block;
+    
+    border-radius: 50%;
+    mix-blend-mode: color-burn;
+}
+.choice:hover:hover{
+border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+.content h2{
+    
+    width:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content h2 p{
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+background: linear-gradient(to right, rgb(172, 166, 172), rgb(60, 243, 167));
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    font-size: 30px;
+  
+}
+.score{
+    background: linear-gradient(to right, rgb(172, 166, 172), rgb(60, 243, 167));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+    
+    border-radius: 10px;
+    width: 150px;
+    border: 2px solid black;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+#msz{
+   
+
+    background: linear-gradient(to right, rgb(172, 166, 172), rgb(60, 243, 167));
+    width: 30%;
+    height: 10vh;
+    margin: 20px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size:40px;
+}
+#computerchoice{
+    background: linear-gradient(to right, rgb(172, 166, 172), rgb(60, 243, 167));
+    width: 30%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 40px;
+    margin-left: auto;   /* Add this */
+    margin-right: auto;  /* Add this */
+}
